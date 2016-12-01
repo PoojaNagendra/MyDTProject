@@ -1,0 +1,168 @@
+/* Padding - just for asthetics on Bootsnipp.com */
+body { margin-top:10px; }
+
+.pay-via{
+   
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    max-width:100%;
+    min-width: 750px;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    
+}
+
+
+.net-bank-wr>.net-bank-hd-wr{padding:10px;border-bottom:1px dashed #e6e6e6}.net-bank-wr>.net-bank-form-wr{padding:10px}.pop-bank-logo-wr>.pop-bank-wr{padding:10px}.net-bank-form{padding-left:30px;width:550px;margin:0 auto}.pop-bank-wr
+
+.net-bnk-logo{width:145px;height:50px;cursor:pointer;position:relative;padding:5px;border:solid 2px #e6e6e6;background-color:#f9f9f9;margin:5px;float:left}.net-bnk-logo .rd-skin{background:transparent url(../img/radio_skin.png) no-repeat;background-position:0 0;height:20px;width:20px;position:relative;top:12px;display:inline-block}.net-bnk-logo .bank-name-wr{background:transparent url(../img/net_bank_logos.png) no-repeat 0 0;width:124px;margin:10px 1%;border:2px solid transparent;position:relative;top:-26px;left:22px;height:32px}.bank-name-wr.HDFC{background-position:0 -65px}.bank-name-wr.ICICI{background-position:-1px -99px}.bank-name-wr.CITIBANK{background-position:0 -34px}.bank-name-wr.SBI{background-position:-1px 0}.bank-name-wr.AXIS{background-position:0 -129px}.bank-name-wr.KOTAK{background-position:-2px -160px}.all-net-banks-wr .select-net-bank-wr{padding:10px 0}.net-bank-cont-btn-wr>.net-bank-sub-btn.disabled{background-color:#e6e6e6;color:#a8a8a8}.pop-bank-wr .net-bnk-logo:hover{border:solid 2px #16b595}.pop-bank-wr .net-bnk-logo:hover .rd-skin{background-position:0 -20px}.select-net-bank-wr .all-banks-txt{margin-right:10px;display:inline-block}.net-bank-cont-btn-wr .net-bank-sub-btn{border-radius:0}.net-bnk-logo.selected-bank{border:solid 2px #16b595}.net-bnk-logo.selected-bank .rd-skin{background-position:0 -20px}.net-down-msg-wr{margin:10px 0}
+
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+
+#creditcard{
+ position: absolute;
+ max-width: 550px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#netbanking{
+ position: absolute;
+ max-width: 550px;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#debitcard{
+ position: absolute;
+ max-width: 550px;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cod{
+ position: absolute;
+ max-width: 550px;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.paymentimg{
+height: 33px;
+}
+
+/* CSS for Credit Card Payment form */
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.credit-card-box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box .payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box label {
+    display: block;
+}
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+    display: table;
+}
+.credit-card-box .display-tr {
+    display: table-row;
+}
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 70%;
+}
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+    min-width: 180px;
+}

@@ -1,0 +1,111 @@
+body{
+    width="100%"
+}
+
+.button{
+    margin-right:10px;
+     position: absolute;
+	 top:10px;
+     right:10px;
+}
+.button1{
+    margin-right:10px;
+     position: absolute;
+	 top:10px;
+     right:90px;
+}
+.images {
+    width:1400px;
+    background-size: cover;
+}
+.topbg {
+    top:-20px;
+}
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+ background-size: cover;
+  text-align: center;
+} 
+.fa
+{
+    font-size:24px;
+}
+.thumbnail img{
+    width: auto !important;
+    height : 250px !important;
+}
+._2beYZw {
+    background-color: #16be48;
+}
+.hGSR34 {
+    line-height: normal;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.hGSR34 ._1M5rur {
+    margin-left: 2px;
+}
+
+/* Navbar main background */
+
+.navbar.navbar-default {
+    background-color: white;
+}
+
+/* Navbar title */
+
+.navbar-default .navbar-brand {
+    color:#0d47a1;
+}
+
+/* Focus/hover state for navbar title */
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: darkgoldenrod;
+}
+.thumbnail {
+    background: white;
+}
+ body
+{ 
+    background: white	 !important;
+}
+/* style for signin and signup */
+
+
+.form-regis{
+    padding:10px;
+    background-color:lightblue;
+    width:65%;
+    height:50vh auto;
+    transform:translate(-50%,-50%);
+    position: absolute;
+    top:50%;
+    left:50%;
+    color:white;
+}
+
+
+    .thumbnails
+{
+    width:50%;
+    height:auto;
+}
+
+.navbar-brand
+{
+    font-size: 50px;
+    font-style:normal;
+    color:#0d47a1;
+}
