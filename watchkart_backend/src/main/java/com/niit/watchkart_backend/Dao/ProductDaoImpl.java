@@ -37,7 +37,7 @@ public class ProductDaoImpl implements ProductDao{
 	}
 
 	@Transactional
-	public void delProduct(String pid)
+	public void delProduct(int pid)
 	{
 		product.setPid(pid);
 		sessionFactory.getCurrentSession().delete(product);
@@ -55,7 +55,7 @@ public class ProductDaoImpl implements ProductDao{
 	}
 	
 
-	public Product getProduct(String pid, String pname, String pprice, String pcategoryid, String pstatus,
+	public Product getProduct(int pid, String pname, String pprice, String pcategoryid, String pstatus,
 			String poffer, String psupplierid) {
 		// TODO Auto-generated method stub
 		return null;

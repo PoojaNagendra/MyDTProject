@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
-
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -270,11 +270,11 @@ public class HomeController {
 	}
 
   
-	@RequestMapping ("insertprod")
-	public String storeprod(@ModelAttribute("product") Product product,BindingResult result ,HttpServletRequest request,final RedirectAttributes redirectAttributes){
+	@RequestMapping (value="items/insertprod",method=RequestMethod.POST)
+	public String storeprod(@Valid @ModelAttribute("product") Product product,BindingResult result ,HttpServletRequest request,final RedirectAttributes redirectAttributes){
 		System.out.println("after submit");
 //		redirectAttributes.addFlashAttribute("message", "true");
-//		redirectAttributes.addFlashAttribute("prod", product);
+		redirectAttributes.addFlashAttribute("product", product);
 		//prod.setPid("655");
 		System.out.println("SSSSSSSSSS "+product.getPname());
 		

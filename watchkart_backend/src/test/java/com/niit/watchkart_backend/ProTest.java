@@ -15,7 +15,10 @@ public class ProTest {
 			System.out.println("Done");
 			
 			ProductDao pd = (ProductDao) ctx.getBean("productDao");
-			List<Product> plst=pd.getAll();
-			System.out.println(plst.size());
+			Product product=(Product) ctx.getBean("product");
+			product.setPid(5);
+			product.setPname("Watch");
+			pd.insertORupdate(product);
+			
 		}
 }

@@ -3,6 +3,7 @@ package com.niit.watchkart_backend.model;
 
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Transient;
@@ -15,7 +16,8 @@ import org.springframework.web.multipart.MultipartFile;
 public class Product  {
 	
 	@Id
-	private String pid;
+	@GeneratedValue
+	private int pid;
 	private String pname;
 	private String pprice;
 	private String pcategoryid;
@@ -26,10 +28,10 @@ public class Product  {
 	private MultipartFile img;
 	
 	
-	public String getPid() {
+	public int getPid() {
 		return pid;
 	}
-	public void setPid(String pid) {
+	public void setPid(int pid) {
 		this.pid = pid;
 	}
 	public String getPname() {

@@ -20,7 +20,8 @@
 <h1 class="text-center">Add Products</h1>
 <br />
 <br />
-<form:form modelAttribute="product" action="insertprod?${_csrf.parameterName}=${_csrf.token}" enctype="multipart/form-data"  method="POST">
+<form:form action="items/insertprod?${_csrf.parameterName}=${_csrf.token}"  commandName="product"  method="post" enctype="multipart/form-data">
+<%-- <form:form commandName="product" action="insertprod?${_csrf.parameterName}=${_csrf.token}" enctype="multipart/form-data"  method="POST"> --%>
 
 	<div class="form-group">
 		<label for="pid" class="col-sm-2 control-label"> Product Id:</label>
@@ -80,7 +81,7 @@
 	
 	</div>
 	< <div class="form-group">
-		<label for="img" class="col-sm-2 control-label">Upload Image:</label>
+		<label for="img" class="col-sm-2 control-label"> Upload Image:</label>
 		<div class="col-sm-8">
 			<form:input path="img" value="${product.img}" type="file" cssClass="form-control"  class="btn btn-primary "/>
 		</div>
