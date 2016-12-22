@@ -3,6 +3,7 @@ package com.niit.watchkart_backend.Dao;
 import java.util.List;
 
 import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -27,17 +28,14 @@ public class CartDaoImpl implements CartDao{
 	}
 
 	
-	public Cart getcart(String cid, String prod_id, String prod_price, String quantity, String total_amount) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
    @Transactional
 	public void insertORupdate(Cart cart)
 	{
 		sessionFactory.getCurrentSession().saveOrUpdate(cart);
 	}
     @Transactional
-	public void delCart(String cid) {
+	public void delCart(int cid) {
 		cart.setCid(cid);
 		sessionFactory.getCurrentSession().delete(cart);
 		
@@ -50,6 +48,28 @@ public class CartDaoImpl implements CartDao{
 				.createCriteria(Cart.class)
 				.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 		return list;
+	}
+
+
+	public Cart getcart(int cid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+    @Transactional
+	public List<Cart> getAllbyUser(String usr) {
+		String hql = "from Cart where Username='" + usr+"'";
+		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+		
+		@SuppressWarnings("unchecked")
+		List<Cart> listCart = (List<Cart>) query.list();
+		
+		if (listCart != null && !listCart.isEmpty()) {
+			return listCart;
+		}
+		return null;
+		
 	}
 
 }

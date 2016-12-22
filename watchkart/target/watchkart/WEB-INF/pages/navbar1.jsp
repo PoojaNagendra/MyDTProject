@@ -10,6 +10,7 @@
               </button>
             <a class="navbar-brand" href="#">WatchKart.com</a>
          </div>
-         <a href="signup" class="btn btn-primary button">Sign out</a>
+          <a  class="button1">${pageContext.request.userPrincipal.name}</a>
+         <a href="Landing" class="btn btn-primary button">Sign out</a>
      </div>
     </nav>

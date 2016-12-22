@@ -4,8 +4,10 @@ import java.util.List;
 
 import com.niit.watchkart_backend.model.Cart;
 public interface CartDao {
-	Cart getcart(String cid,String prod_id,String prod_price, String quantity, String total_amount);
+	Cart getcart(int cid);
 	void insertORupdate(Cart cart);
-	void delCart(String cid);
+	void delCart(int cid);
 	List<Cart> getAll();
+	List<Cart> getAllbyUser(String usr);
+	
 }

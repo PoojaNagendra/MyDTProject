@@ -9,23 +9,28 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Watchkart</title>
 <link rel="stylesheet" type="text/css"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<spring:url value="/resources/css/bootstrap.css" var="boot" />
-<link rel"stylesheet" href="${boot}">
+<%-- <spring:url value="/resources/css/bootstrap.min.css" var="boot" /> --%>
+<%-- <link rel="stylesheet" href="${boot}"> --%>
 <spring:url value="/resources/css/style.css" var="style" />
 <link rel="stylesheet" href="${style}">
-<link rel="stylesheet"
-	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-    <spring:url value="/resources/css/bootstrap.css" var="boot"/><link rel="stylesheet" href="${boot}">
-        <spring:url value="/resources/css/style1.css" var="style"/><link rel="stylesheet" href="${style}">
+<link rel="stylesheet" href="${boot}">
+<spring:url value="/resources/css/font-awesome.min.css" var="style" />
+<link rel="stylesheet" href="${style}">
+
+<!-- <link rel="stylesheet"  -->
+<!-- 	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">  -->
+
+<%--     <spring:url value="/resources/css/bootstrap.css" var="boot"/><link rel="stylesheet" href="${boot}"> --%>
+<%--         <spring:url value="/resources/css/style1.css" var="style"/><link rel="stylesheet" href="${style}"> --%>
 
 </head>
 <body>

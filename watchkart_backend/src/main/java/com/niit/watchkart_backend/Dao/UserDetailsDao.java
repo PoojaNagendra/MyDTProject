@@ -5,8 +5,8 @@ import java.util.List;
 
 import com.niit.watchkart_backend.model.UserDetails;
 public interface UserDetailsDao {
-	UserDetails getuserdetails(String uid,String pwd,String name, String address, String phoneno, String remarks, String houseno, String street,String city, String pincode , String state, String country);
+	UserDetails getuserdetails(int uid);
 	void insertORupdate(UserDetails userdetails);
-	void delUserDetails(String uid);
+	void delUserDetails(int uid);
 	List<UserDetails> getAll();
 }

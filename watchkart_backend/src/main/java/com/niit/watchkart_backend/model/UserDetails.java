@@ -1,5 +1,7 @@
 package com.niit.watchkart_backend.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -7,27 +9,25 @@ import org.springframework.stereotype.Component;
 
 @Entity
 @Component
-public class UserDetails {
+public class UserDetails implements Serializable {
 	@Id
-	  private String uid;
+	  private int uid;
 	  private String pwd;
 	  private String name;
 	  private String address;
 	  private String phoneno;
 	  private String remarks;
-	  private String houseno;
-	  private String street;
-	  private String city;
-	  private String pincode;
 	  private String state;
 	  private String country;
+	  private int cart_id;
 	  public UserDetails(){}
-	public String getUid() {
+	public int getUid() {
 		return uid;
 	}
-	public void setUid(String uid) {
+	public void setUid(int uid) {
 		this.uid = uid;
 	}
+	
 	public String getPwd() {
 		return pwd;
 	}
@@ -58,30 +58,7 @@ public class UserDetails {
 	public void setRemarks(String remarks) {
 		this.remarks = remarks;
 	}
-	public String getHouseno() {
-		return houseno;
-	}
-	public void setHouseno(String houseno) {
-		this.houseno = houseno;
-	}
-	public String getStreet() {
-		return street;
-	}
-	public void setStreet(String street) {
-		this.street = street;
-	}
-	public String getCity() {
-		return city;
-	}
-	public void setCity(String city) {
-		this.city = city;
-	}
-	public String getPincode() {
-		return pincode;
-	}
-	public void setPincode(String pincode) {
-		this.pincode = pincode;
-	}
+
 	public String getState() {
 		return state;
 	}
@@ -94,5 +71,13 @@ public class UserDetails {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+	public int getCart_id() {
+		return cart_id;
+	}
+	public void setCart_id(int cart_id) {
+		this.cart_id = cart_id;
+	}
+
+
 	  
 }

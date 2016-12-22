@@ -3,6 +3,7 @@ package com.niit.watchkart_backend.Dao;
 import java.util.List;
 
 import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -33,12 +34,7 @@ public class UserDetailsDaoImpl implements UserDetailsDao{
 		sessionFactory.getCurrentSession().saveOrUpdate(userdetails);
 		
 	}
-    @Transactional
-	public void delUserDetails(String uid) {
-		userdetails.setUid(uid);
-		sessionFactory.getCurrentSession().delete(userdetails);
-		
-	}
+  
 
 	
 	@Transactional
@@ -52,12 +48,37 @@ public class UserDetailsDaoImpl implements UserDetailsDao{
 
 
 
+    @Transactional
+	public UserDetails getuserdetails(int uid) {
 
-	public UserDetails getuserdetails(String uid, String pwd, String name, String address, String phoneno,
-			String remarks, String houseno, String street, String city, String pincode, String state, String country) {
-		// TODO Auto-generated method stub
-		return null;
+    	String hql = "from Supplier where uid='" + uid+"'";
+    		Query query = sessionFactory.getCurrentSession().createQuery(hql);
+    		
+    		@SuppressWarnings("unchecked")
+    		List<UserDetails> listUserdetails = (List<UserDetails>) query.list();
+    		
+    		if (listUserdetails != null && !listUserdetails.isEmpty()) {
+    			return listUserdetails.get(0);
+    		}
+    		return null;
+		
 	}
+
+
+
+    @Transactional
+	public void delUserDetails(int uid) {
+		userdetails.setUid(uid);
+		sessionFactory.getCurrentSession().delete(userdetails);
+		
+	}
+
+
+
+
+
+
+
 
 
 

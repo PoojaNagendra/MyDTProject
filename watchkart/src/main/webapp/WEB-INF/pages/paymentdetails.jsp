@@ -3,10 +3,10 @@
     <link rel="stylesheet" type="text/css" href="css/checkout.css">
 <h2 align="center">Payment Details</h2><br/><br/>
     <div class="pay-via">Paying by :<a href="#creditcard">
-<button class="button button1">Credit Card</button></a><a href="#netbanking">
-<button class="button button2">Net Banking</button></a><a href="#debitcard">
-<button class="button button3">Debit Card</button></a><a href="#cod">
-<button class="button button5">COD</button></a>
+<button class=" button4">Credit Card</button></a><a href="#netbanking">
+<button class=" button2">Net Banking</button></a><a href="#debitcard">
+<button class=" button3">Debit Card</button></a><a href="#cod">
+<button class=" button5">COD</button></a>
 <br/>
 <br/>        
 </div>
@@ -86,7 +86,7 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
-                               <a href="user-success.html"> <button class="subscribe btn btn-success btn-lg btn-block" type="button">Pay Now!</button></a>
+                               <a href="user-success"> <button class="subscribe btn btn-success btn-lg btn-block" type="button">Pay Now!</button></a>
                             </div>
                         </div>
                         <div class="row" style="display:none;">

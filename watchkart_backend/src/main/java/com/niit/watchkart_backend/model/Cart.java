@@ -9,22 +9,30 @@ import org.springframework.stereotype.Component;
 @Component
 public class Cart {
 	@Id
-	private String cid;
-	private String prod_id;
+	private int cid;
+	private int prod_id;
+	private String prod_name;
 	private String prod_price;
 	private String quantity;
 	private String total_amount;
-	public String getCid() {
+	private String Username;
+	public int getCid() {
 		return cid;
 	}
-	public void setCid(String cid) {
+	public void setCid(int cid) {
 		this.cid = cid;
 	}
-	public String getProd_id() {
+	public int getProd_id() {
 		return prod_id;
 	}
-	public void setProd_id(String prod_id) {
+	public void setProd_id(int prod_id) {
 		this.prod_id = prod_id;
+	}
+	public String getProd_name() {
+		return prod_name;
+	}
+	public void setProd_name(String prod_name) {
+		this.prod_name = prod_name;
 	}
 	public String getProd_price() {
 		return prod_price;
@@ -43,6 +51,12 @@ public class Cart {
 	}
 	public void setTotal_amount(String total_amount) {
 		this.total_amount = total_amount;
+	}
+	public String getUsername() {
+		return Username;
+	}
+	public void setUsername(String username) {
+		Username = username;
 	}
 	
 }

@@ -1,61 +1,75 @@
-*{
-    padding: 0;
-    margin:0;
+body{
+    background-color:lightblue;
 }
-.index{
-    background:url("../img/c..jpg") no-repeat;
-    background-size:cover;
-    height: 100vh;
+
+.images {
+    width:1400px;
+    background-size: cover;
 }
-.hi{
-    color:deeppink;
-    font-size:3em;
-    text-align: center;
-    padding: 5vh 0vh 5vh 0vh;
-    text-decoration: underline;
+.topbg {
+    top:-20px;
 }
-.text
+.footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+ background-size: cover;
+  text-align: center;
+} 
+.fa
 {
-    height:auto;
-    display:block;
-    margin:auto;
-}
-.ask{
-    padding-top: 2em;
-}
-	.img{
-   display: block;
-    margin: auto;
-
+    font-size:24px;
 }
 
-.reg{
-    background: url(../img/back.jpg)no-repeat;
-    background-size:cover;
-    height:100vh;
+
+/* Navbar main background */
+
+.navbar.navbar-default {
+    background-color: white;
 }
-.h{
-    text-align: center;
+
+/* Navbar title */
+
+.navbar-default .navbar-brand {
+    color:#0d47a1;
 }
-.rock{
-    padding:0% 20%;
+
+/* Focus/hover state for navbar title */
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: darkgoldenrod;
 }
-label{
-	backgroud-color:plum;
+
+
+/* style for signin and signup */
+
+
+.form-regis{
+    padding:10px;
+    background-color:white;
+    width:65%;
+    height:50vh auto;
+    transform:translate(-50%,-50%);
+    position: absolute;
+    top:50%;
+    left:50%;
+    color:white;
 }
-header{
-    text-align: center;
-    font-size: 3em;
-    font-style:bold;
-}
-.for{
-    
-    padding:0% 20%;
-    padding-top: 5vh;
-}
-.mg{
+
+
+    .thumbnails
+{
+    width:50%;
     height:auto;
-    display:block;
-    margin:auto;
 }
+
+.navbar-brand
+{
+    font-size: 50px;
+    font-style:normal;
+    color:#0d47a1;
 }

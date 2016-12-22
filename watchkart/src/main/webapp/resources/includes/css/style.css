@@ -31,6 +31,16 @@ body{
  background-size: cover;
   text-align: center;
 } 
+.footer2 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+ background-size: cover;
+  text-align: center;
+} 
 .fa
 {
     font-size:24px;

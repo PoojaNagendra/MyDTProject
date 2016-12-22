@@ -2,8 +2,10 @@
 <spring:url value="/resources/css/style2.css" var="style" />
 <link rel="stylesheet" href="${style}">
 <%@include file="/WEB-INF/pages/navbar1.jsp"%>
-     <%@include file="/WEB-INF/pages/firstimg.jsp"%>
-    <%@include file="/WEB-INF/pages/footer.jsp"%>
+     <%@include file="/WEB-INF/pages/imginfo.jsp"%>
+   <!-- Footer starts-->
+          <div class="footer2"><b>Copyright &copy; 2016</b></div>
+          <!-- Footer ends -->
     </body>
 
 <spring:url value="/resources/js/jquery.js" var="jq" />

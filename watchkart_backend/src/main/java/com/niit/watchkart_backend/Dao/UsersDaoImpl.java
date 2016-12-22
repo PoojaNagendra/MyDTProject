@@ -27,10 +27,7 @@ public class UsersDaoImpl implements UsersDao {
 		this.sessionFactory = sessionFactory;
 	}
 
-	public Users getUsers(String uid, String pwd, String role) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
   @Transactional
 	public void insertORupdate(Users usr) 
 	{
@@ -39,7 +36,7 @@ public class UsersDaoImpl implements UsersDao {
 	}
 
 	@Transactional
-	public void delUsers(String uid) {
+	public void delUsers(int uid) {
 		users.setUid(uid);
 		sessionFactory.getCurrentSession().delete(users);
 		
@@ -52,5 +49,11 @@ public class UsersDaoImpl implements UsersDao {
 				.createCriteria(Users.class)
 				.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 		return list;
+	}
+
+
+	public Users getUsers(int uid) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

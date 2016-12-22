@@ -9,14 +9,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class Users {
   @Id
-  private String uid;
+  private int uid;
   private String pwd;
   private String role;
   
-public synchronized String getUid() {
+public synchronized int getUid() {
 	return uid;
 }
-public synchronized void setUid(String uid) {
+public synchronized void setUid(int uid) {
 	this.uid = uid;
 }
 public synchronized String getPwd() {

@@ -21,10 +21,10 @@ public class LoginController {
 	   	System.out.println("DONEEEEEEEEEEEEEEEEEEEEEEEEE");
 		   return "testLog";
 	   }
-	@RequestMapping("/userview")
-	public String getUserview(){
-		return "user-landing";
-	}
+//	@RequestMapping("/userview")
+//	public String getUserview(){
+//		return "user-landing";
+//	}
 	 @RequestMapping("/logins")
 		public String getLog()
 		{

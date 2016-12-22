@@ -104,7 +104,8 @@ control.controller('mController', function($scope, $http){
 <spring:url value="/resources/js/bootstrap.min.js" var="b"/><script src="${b}"></script>
 <spring:url value="/resources/js/jquery-2.2.4.min.js" var="jq"/><script src="${jq}"></script>
 <spring:url value="/resources/js/angular.min.js" var="a"/><script src="${a}"></script>
-<spring:url value="/resources/js/proController.js" var="aa"/><script src="${aa}"></script>        
+<spring:url value="/resources/js/proController.js" var="aa"/><script src="${aa}"></script>
+<%@include file="/WEB-INF/pages/footer.jsp"%>        
 </body>
       
 </html>

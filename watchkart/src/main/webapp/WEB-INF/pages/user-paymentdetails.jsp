@@ -9,5 +9,5 @@
 <script src="${a}"></script>
 <spring:url value="/resources/js/admincontroller.js" var="aa" />
 <script src="${aa}"></script>
-
+<%@include file="/WEB-INF/pages/footer.jsp"%>
 </html>

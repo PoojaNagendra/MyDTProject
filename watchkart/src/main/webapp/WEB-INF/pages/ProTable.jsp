@@ -1,4 +1,5 @@
-
+<%@include file="/WEB-INF/pages/header.jsp"%>
+<%@include file="/WEB-INF/pages/navbar1.jsp"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
       <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -38,6 +39,7 @@ control.controller('mController', function($scope, $http){
 	      
                $http.get('GsonCon').success(function(data, status, headers, config) {
             	   console.log(data);
+            	 
                         $scope.list = data;
                 });
                         
@@ -69,6 +71,7 @@ control.controller('mController', function($scope, $http){
 		<th>Status</th>
 		<th>Offer</th>
 		<th>Supplier_ID</th>
+		
 	</tr>
 	
 	<tr ng-repeat="p in list | orderBy:sortType:sortReverse | filter:searchPName ">
@@ -79,16 +82,9 @@ control.controller('mController', function($scope, $http){
 	<td>{{p.pstatus}}</td>
 	<td>{{p.poffer}}</td>
 	<td>{{p.psupplierid}}</td>
-	<th><a class="btn btn-danger" href="edit.do?pid={{p.pid}}">Edit</a> <a class="btn btn-primary" href="sdel?val={{p.pid}}">Delete</a></th>
-	</tr>
+	
+	
+<th><a class="btn btn-danger" href="edit.do?pid={{p.pid}}">Edit</a> <a class="btn btn-primary" href="sdel?val={{p.pid}}">Delete</a></th>	</tr>
 </table>	
 <br/>
 </div>
-
-
-
-
-
-
-
-

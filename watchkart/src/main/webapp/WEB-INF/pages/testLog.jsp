@@ -16,7 +16,7 @@
 		</c:if>
 		<c:if test="${pageContext.request.userPrincipal.name != null}">
 		<%System.out.println("not null"); %>
-		<c:redirect url="/user-landing"></c:redirect>
+		<c:redirect url="/userview"></c:redirect>
 </c:if>
 </sec:authorize>
 <sec:authorize access="hasRole('ROLE_ADMIN')">
@@ -25,7 +25,7 @@
 			<c:redirect url="/logins"></c:redirect>
 		</c:if>
 		<c:if test="${pageContext.request.userPrincipal.name != null}">
-		<c:redirect url="/admin/info"></c:redirect>
+		<c:redirect url="/admin"></c:redirect>
 </c:if>
 </sec:authorize>
 <sec:authorize access="hasRole('ROLE_SUP')">
